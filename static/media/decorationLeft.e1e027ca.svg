@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1371.51" height="1456.708" viewBox="0 0 1371.51 1456.708">
+  <defs>
+    <filter id="Trazado_10" x="47.386" y="100.205" width="1317.308" height="1356.503" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Trazado_11" x="17.459" y="38.56" width="1352.65" height="1394.996" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.72" y1="0.802" x2="0.028" y2="0.066" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffa617"/>
+      <stop offset="1" stop-color="#fd1716"/>
+    </linearGradient>
+    <filter id="Trazado_12" x="0" y="0" width="1371.51" height="1407.723" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_160" data-name="Grupo 160" transform="translate(1105.045 -2555.598)">
+    <g transform="matrix(1, 0, 0, 1, -1105.05, 2555.6)" filter="url(#Trazado_10)">
+      <path id="Trazado_10-2" data-name="Trazado 10" d="M1011.418,878.116,800.1,98.786s-18.936-81.109-162.021-80.01C462.957,20.121,71.294,0,71.294,0L0,824.336Z" transform="matrix(0.54, 0.84, -0.84, 0.54, 798.84, 105.21)" fill="#fd1716"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1105.05, 2555.6)" filter="url(#Trazado_11)">
+      <path id="Trazado_11-2" data-name="Trazado 11" d="M1052.139,908.12,815.33,153.276s-18.936-81.109-162.021-80.01C478.184,74.611,0,0,0,0L15.227,878.827Z" transform="matrix(0.54, 0.84, -0.84, 0.54, 788.07, 44.56)" fill="#fe5e11"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1105.05, 2555.6)" filter="url(#Trazado_12)">
+      <path id="Trazado_12-2" data-name="Trazado 12" d="M1053.128,929.966,801.469,203.794s-18.936-81.109-162.021-80.01C464.323,125.129,0,0,0,0L1.366,929.344Z" transform="matrix(0.54, 0.84, -0.84, 0.54, 788.93, 6)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
