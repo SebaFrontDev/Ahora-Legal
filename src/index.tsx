@@ -10,7 +10,7 @@ const composeEnhancers = compose;
 const store = createStore(reducer, initialState, composeEnhancers());
 
 ReactDom.render(
-  <React.StrictMode>
+  <React.StrictMode>    
     <Provider store={store}>
       <App />
     </Provider>
