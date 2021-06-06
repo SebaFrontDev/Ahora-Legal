@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/dicode-challenge/static/js/main.53ecd5ab.chunk.js",
-    "main.js.map": "/dicode-challenge/static/js/main.53ecd5ab.chunk.js.map",
+    "main.js": "/dicode-challenge/static/js/main.c54a99d2.chunk.js",
+    "main.js.map": "/dicode-challenge/static/js/main.c54a99d2.chunk.js.map",
     "runtime-main.js": "/dicode-challenge/static/js/runtime-main.2738ff0a.js",
     "runtime-main.js.map": "/dicode-challenge/static/js/runtime-main.2738ff0a.js.map",
     "static/js/2.c1c18238.chunk.js": "/dicode-challenge/static/js/2.c1c18238.chunk.js",
@@ -28,6 +28,6 @@
   "entrypoints": [
     "static/js/runtime-main.2738ff0a.js",
     "static/js/2.c1c18238.chunk.js",
-    "static/js/main.53ecd5ab.chunk.js"
+    "static/js/main.c54a99d2.chunk.js"
   ]
 }
