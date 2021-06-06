@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.js": "/dicode-challenge/static/js/main.1d79eefc.chunk.js",
-    "main.js.map": "/dicode-challenge/static/js/main.1d79eefc.chunk.js.map",
+    "main.js": "/dicode-challenge/static/js/main.878949cd.chunk.js",
+    "main.js.map": "/dicode-challenge/static/js/main.878949cd.chunk.js.map",
     "runtime-main.js": "/dicode-challenge/static/js/runtime-main.2738ff0a.js",
     "runtime-main.js.map": "/dicode-challenge/static/js/runtime-main.2738ff0a.js.map",
-    "static/js/2.c1c18238.chunk.js": "/dicode-challenge/static/js/2.c1c18238.chunk.js",
-    "static/js/2.c1c18238.chunk.js.map": "/dicode-challenge/static/js/2.c1c18238.chunk.js.map",
+    "static/js/2.75ba1434.chunk.js": "/dicode-challenge/static/js/2.75ba1434.chunk.js",
+    "static/js/2.75ba1434.chunk.js.map": "/dicode-challenge/static/js/2.75ba1434.chunk.js.map",
     "index.html": "/dicode-challenge/index.html",
-    "static/js/2.c1c18238.chunk.js.LICENSE.txt": "/dicode-challenge/static/js/2.c1c18238.chunk.js.LICENSE.txt",
-    "static/media/HeroImage.17990ae6.png": "/dicode-challenge/static/media/HeroImage.17990ae6.png",
+    "static/js/2.75ba1434.chunk.js.LICENSE.txt": "/dicode-challenge/static/js/2.75ba1434.chunk.js.LICENSE.txt",
     "static/media/ahoraLegalLogo.e371f4f2.svg": "/dicode-challenge/static/media/ahoraLegalLogo.e371f4f2.svg",
     "static/media/asuntosCiviles.d2af009a.svg": "/dicode-challenge/static/media/asuntosCiviles.d2af009a.svg",
     "static/media/balanza.1a0b7337.svg": "/dicode-challenge/static/media/balanza.1a0b7337.svg",
@@ -21,13 +20,14 @@
     "static/media/decorationRight.43da3acb.svg": "/dicode-challenge/static/media/decorationRight.43da3acb.svg",
     "static/media/estrella.759204a4.svg": "/dicode-challenge/static/media/estrella.759204a4.svg",
     "static/media/familiares.0be6b970.svg": "/dicode-challenge/static/media/familiares.0be6b970.svg",
+    "static/media/heroVideo.340a77e3.mp4": "/dicode-challenge/static/media/heroVideo.340a77e3.mp4",
     "static/media/logo.89444b26.svg": "/dicode-challenge/static/media/logo.89444b26.svg",
     "static/media/penales.0f4ea658.svg": "/dicode-challenge/static/media/penales.0f4ea658.svg",
     "static/media/planBasic.983e7d66.svg": "/dicode-challenge/static/media/planBasic.983e7d66.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2738ff0a.js",
-    "static/js/2.c1c18238.chunk.js",
-    "static/js/main.1d79eefc.chunk.js"
+    "static/js/2.75ba1434.chunk.js",
+    "static/js/main.878949cd.chunk.js"
   ]
 }
