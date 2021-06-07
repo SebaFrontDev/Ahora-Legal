@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dicode-challenge/static/css/main.c0392da4.chunk.css",
-    "main.js": "/dicode-challenge/static/js/main.c78dda75.chunk.js",
-    "main.js.map": "/dicode-challenge/static/js/main.c78dda75.chunk.js.map",
+    "main.js": "/dicode-challenge/static/js/main.d2208327.chunk.js",
+    "main.js.map": "/dicode-challenge/static/js/main.d2208327.chunk.js.map",
     "runtime-main.js": "/dicode-challenge/static/js/runtime-main.2738ff0a.js",
     "runtime-main.js.map": "/dicode-challenge/static/js/runtime-main.2738ff0a.js.map",
     "static/js/2.5d9a681b.chunk.js": "/dicode-challenge/static/js/2.5d9a681b.chunk.js",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.2738ff0a.js",
     "static/js/2.5d9a681b.chunk.js",
     "static/css/main.c0392da4.chunk.css",
-    "static/js/main.c78dda75.chunk.js"
+    "static/js/main.d2208327.chunk.js"
   ]
 }
