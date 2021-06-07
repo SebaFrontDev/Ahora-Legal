@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dicode-challenge/static/css/main.c0392da4.chunk.css",
-    "main.js": "/dicode-challenge/static/js/main.d2208327.chunk.js",
-    "main.js.map": "/dicode-challenge/static/js/main.d2208327.chunk.js.map",
+    "main.css": "/dicode-challenge/static/css/main.606aee46.chunk.css",
+    "main.js": "/dicode-challenge/static/js/main.7468fa5b.chunk.js",
+    "main.js.map": "/dicode-challenge/static/js/main.7468fa5b.chunk.js.map",
     "runtime-main.js": "/dicode-challenge/static/js/runtime-main.2738ff0a.js",
     "runtime-main.js.map": "/dicode-challenge/static/js/runtime-main.2738ff0a.js.map",
     "static/js/2.5d9a681b.chunk.js": "/dicode-challenge/static/js/2.5d9a681b.chunk.js",
     "static/js/2.5d9a681b.chunk.js.map": "/dicode-challenge/static/js/2.5d9a681b.chunk.js.map",
     "index.html": "/dicode-challenge/index.html",
-    "static/css/main.c0392da4.chunk.css.map": "/dicode-challenge/static/css/main.c0392da4.chunk.css.map",
+    "static/css/main.606aee46.chunk.css.map": "/dicode-challenge/static/css/main.606aee46.chunk.css.map",
     "static/js/2.5d9a681b.chunk.js.LICENSE.txt": "/dicode-challenge/static/js/2.5d9a681b.chunk.js.LICENSE.txt",
     "static/media/MobileImg.49e3fc07.png": "/dicode-challenge/static/media/MobileImg.49e3fc07.png",
     "static/media/ahoraLegalLogo.e371f4f2.svg": "/dicode-challenge/static/media/ahoraLegalLogo.e371f4f2.svg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.2738ff0a.js",
     "static/js/2.5d9a681b.chunk.js",
-    "static/css/main.c0392da4.chunk.css",
-    "static/js/main.d2208327.chunk.js"
+    "static/css/main.606aee46.chunk.css",
+    "static/js/main.7468fa5b.chunk.js"
   ]
 }
