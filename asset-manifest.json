@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.js": "/dicode-challenge/static/js/main.878949cd.chunk.js",
-    "main.js.map": "/dicode-challenge/static/js/main.878949cd.chunk.js.map",
+    "main.css": "/dicode-challenge/static/css/main.c0392da4.chunk.css",
+    "main.js": "/dicode-challenge/static/js/main.c78dda75.chunk.js",
+    "main.js.map": "/dicode-challenge/static/js/main.c78dda75.chunk.js.map",
     "runtime-main.js": "/dicode-challenge/static/js/runtime-main.2738ff0a.js",
     "runtime-main.js.map": "/dicode-challenge/static/js/runtime-main.2738ff0a.js.map",
-    "static/js/2.75ba1434.chunk.js": "/dicode-challenge/static/js/2.75ba1434.chunk.js",
-    "static/js/2.75ba1434.chunk.js.map": "/dicode-challenge/static/js/2.75ba1434.chunk.js.map",
+    "static/js/2.5d9a681b.chunk.js": "/dicode-challenge/static/js/2.5d9a681b.chunk.js",
+    "static/js/2.5d9a681b.chunk.js.map": "/dicode-challenge/static/js/2.5d9a681b.chunk.js.map",
     "index.html": "/dicode-challenge/index.html",
-    "static/js/2.75ba1434.chunk.js.LICENSE.txt": "/dicode-challenge/static/js/2.75ba1434.chunk.js.LICENSE.txt",
+    "static/css/main.c0392da4.chunk.css.map": "/dicode-challenge/static/css/main.c0392da4.chunk.css.map",
+    "static/js/2.5d9a681b.chunk.js.LICENSE.txt": "/dicode-challenge/static/js/2.5d9a681b.chunk.js.LICENSE.txt",
+    "static/media/MobileImg.49e3fc07.png": "/dicode-challenge/static/media/MobileImg.49e3fc07.png",
     "static/media/ahoraLegalLogo.e371f4f2.svg": "/dicode-challenge/static/media/ahoraLegalLogo.e371f4f2.svg",
     "static/media/asuntosCiviles.d2af009a.svg": "/dicode-challenge/static/media/asuntosCiviles.d2af009a.svg",
     "static/media/balanza.1a0b7337.svg": "/dicode-challenge/static/media/balanza.1a0b7337.svg",
@@ -15,6 +18,7 @@
     "static/media/bannerLeft.008ea1ee.svg": "/dicode-challenge/static/media/bannerLeft.008ea1ee.svg",
     "static/media/cellPhoneImg.36e08763.svg": "/dicode-challenge/static/media/cellPhoneImg.36e08763.svg",
     "static/media/comerciales.7dc7b276.svg": "/dicode-challenge/static/media/comerciales.7dc7b276.svg",
+    "static/media/style.css": "/dicode-challenge/static/media/penal.5467d50a.png",
     "static/media/consumidor.83065253.svg": "/dicode-challenge/static/media/consumidor.83065253.svg",
     "static/media/decorationLeft.e1e027ca.svg": "/dicode-challenge/static/media/decorationLeft.e1e027ca.svg",
     "static/media/decorationRight.43da3acb.svg": "/dicode-challenge/static/media/decorationRight.43da3acb.svg",
@@ -27,7 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2738ff0a.js",
-    "static/js/2.75ba1434.chunk.js",
-    "static/js/main.878949cd.chunk.js"
+    "static/js/2.5d9a681b.chunk.js",
+    "static/css/main.c0392da4.chunk.css",
+    "static/js/main.c78dda75.chunk.js"
   ]
 }
