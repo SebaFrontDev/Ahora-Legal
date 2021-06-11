@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
     arrowRight: {
         position: 'absolute',
-        right: 100,
+        right: 0,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
@@ -28,23 +28,29 @@ const useStyles = makeStyles((theme) => ({
     },
     arrowLeft: {
         position: 'absolute',
-        left: 100,
+        left: 0,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
         userSelect: 'none',
     },
     slide: {
-        opacity: 0,
+        opacity: 0.5,
         transitionDuration: '1s ease',
+        transform: 'scale(0.5)',
     },
     slideActive: {
         opacity: 1,
         transitionDuration: '1s',
     },
-    card: {
-        height: 400,
-        width: 300,
+    carouselWrapper: {
+        position: 'relative',
+    },
+    carouselContainer: {
+        overflowX: 'hidden',
+    },
+    carouselItem:{
+        maxWidth: 300,
     },
     title: {
         display: 'flex',
@@ -64,7 +70,7 @@ const SuccessStories: React.FC = () => {
     const [current, setCurrent] = useState(0);
 
     const nextSlide = () => {
-        if(current === successStories.length - 1){
+        if(current === successStories.length - 1 ){
             setCurrent(0)
         } else {
             setCurrent(current + 1)
@@ -98,27 +104,25 @@ const SuccessStories: React.FC = () => {
               wrap="nowrap"
             >
               <NavigateBeforeIcon className={classes.arrowLeft} onClick={prevSlide} />
-                {successStories.map((slide, index) => {
+              {successStories.map((slide, index) => {
                     return(
                         <Grid
                             item
                             key={index}
                             className={index === current ? classes.slideActive : classes.slide}
                         >
-                            {index === current && 
-                             <Card className={classes.card}>
-                                <CardContent>
+                             <Card className={classes.carouselContainer}>
+                                <CardContent className={classes.carouselItem}>
                                     <Grid container justify="center">
-                                    <img src={estrella} alt="estrella" className={classes.logo} />
-                                    <img src={estrella} alt="estrella" className={classes.logo}  />
-                                    <img src={estrella} alt="estrella" className={classes.logo}  />
+                                    <img src={estrella} alt="estrella" />
+                                    <img src={estrella} alt="estrella" />
+                                    <img src={estrella} alt="estrella" />
                                     </Grid>
-                                    <Typography variant="h5" style={{ marginTop: 10 }}><strong>{slide.title}</strong></Typography>
-                                    <Typography component="p" style={{ marginTop: 10 }}>{slide.subtitle}</Typography>
-                                    <Typography variant="subtitle1"><strong>{slide.hashtag}</strong></Typography>
+                                    <Typography ><strong>{slide.title}</strong></Typography>
+                                    <Typography>{slide.subtitle}</Typography>
+                                    <Typography><strong>{slide.hashtag}</strong></Typography>
                                 </CardContent>
-                            </Card>   
-                            }
+                            </Card>
                         </Grid>
                     )})
                 }
