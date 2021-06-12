@@ -1,8 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import CardMedia from '@material-ui/core/CardMedia';
 import ReactPlayer from 'react-player';
-import heroImage from '../assets/HeroImage.png';
+import heroVideo from '../assets/heroVideo.mp4'
 
 const useStyles = makeStyles({
     root: {
@@ -18,22 +17,11 @@ const useStyles = makeStyles({
     }
   });
 
-  const heroVideo = 'https://drive.google.com/file/d/1cjdEjYxcuodQHC0VoaWdgnVYebGzR9-i/view?usp=sharing'
-
 const Hero = () => {
     const classes = useStyles();
     return (
         <>
-        { heroImage ? 
-          <Grid item className={classes.root}>
-            <CardMedia
-              component="img"
-              alt="imagen de fondo"
-              image={heroImage}
-            />
-          </Grid>
-        :
-         <Grid item lg={12} md={12} sm={12} className={classes.root}>
+         <Grid item className={classes.root}>
           <ReactPlayer
             url={heroVideo}
             playing
@@ -44,7 +32,6 @@ const Hero = () => {
             className={classes.reproductor}
           />
         </Grid> 
-        }
     </>
     )
 };
