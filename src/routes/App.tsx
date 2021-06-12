@@ -17,7 +17,7 @@ const App: React.FC = () => (
     <ThemeProvider theme={theme}>
     <CssBaseline />
       <Switch>
-        <Route exact path='/dicode-challenge' component={Home} />
+        <Route exact path='/ahoralegal' component={Home} />
         <Route component={NotFound} />
       </Switch>
     </ThemeProvider>
