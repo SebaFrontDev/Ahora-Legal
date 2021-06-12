@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
         left: -40,
         color: 'white',
         borderRadius: 25,
-        backgroundColor: '#ff9e17',
+        backgroundColor: '#fe5e11',
     },
     email: {
         height: '96%',
@@ -72,8 +72,11 @@ const useStyles = makeStyles((theme) => ({
     },
     inputs: {
         width: 400,
+        height: 30,
         margin: 5,
-        borderRadius: 20,
+        borderRadius: 10,
+        backgroundColor: '#f8c47c',
+        border: 'none',
     },
       buttonContainer: {
         backgroundColor: '#fe5e11',
@@ -138,29 +141,24 @@ const CheckoutForm: React.FC = () => {
                     <Grid container className={classes.card1} alignItems="flex-end" justify="flex-end">
                         <Grid container alignItems="center" justify="space-between" className={classes.card2}>
                             <Grid item xs={5}>
-                                <Grid container direction="column" style={{ paddingLeft: 20 }}>
+                                <Grid container direction="column" style={{ marginLeft: 100 }}>
                                     <Typography variant="subtitle1" align="center">
                                     <strong>Dejanos tu consulta y dentro de las 24 hs te respoderemos</strong>
                                     </Typography>
                                     <Grid container justify="center">
-                                        <TextField id="Nombre" label="Nombre" variant="filled" className={classes.inputs} />
-                                        <TextField id="Email" label="Email" variant="filled" className={classes.inputs}/>
-                                        <TextField id="Telefono" label="Telefono" variant="filled" className={classes.inputs}/>
-                                        <TextField
-                                            className={classes.inputs}
-                                            id="Consulta"
-                                            label="Colnsulta"
-                                            multiline
-                                            rows={4}
-                                            variant="outlined"
-                                        />
-                                        <Grid item>
-                                            <Grid className={classes.buttonContainer} style={{ backgroundColor: '#fff' }}>
-                                                <Button type="submite" className={classes.button} href="#top">
-                                                    Enviar
-                                                </Button>
+                                        <form>
+                                            <input id="Nombre" placeholder="Nombre" autoComplete="name" type="text"className={classes.inputs} />
+                                            <input id="Email" placeholder="Email" autoComplete="email" type="email"className={classes.inputs}/>
+                                            <input id="Telefono" placeholder="Teléfono" autoComplete="tel" type="number"className={classes.inputs}/>
+                                            <input id="Consulta" placeholder="Consulta" type="text" className={classes.inputs} style={{ height: 100 }} />
+                                            <Grid item>
+                                                <Grid className={classes.buttonContainer} style={{ backgroundColor: '#fff' }}>
+                                                    <Button type="submite" className={classes.button} href="#top">
+                                                        Enviar
+                                                    </Button>
+                                                </Grid>
                                             </Grid>
-                                        </Grid>
+                                        </form>
                                     </Grid>
                                 </Grid>
                             </Grid>
