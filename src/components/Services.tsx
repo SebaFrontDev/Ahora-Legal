@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 20,
         backgroundColor: 'white',
         boxShadow: '-1px 1px 5px #000',
+        paddingBottom: 40,
         '&:hover': {
             position: 'relative',
             right: -20,
@@ -48,14 +49,14 @@ const useStyles = makeStyles((theme) => ({
     },
     icons: {
         fontSize: 50,
-        marginBottom: 5,
+        marginBottom: 12,
         marginTop: 5,
         color: '#ff9e17',
     },
     buttonContainer: {
         backgroundColor: '#fe5e11',
         borderRadius: 20,
-        marginTop: 15,
+        marginTop: 50,
         width: 200,
         height: 40,
         textAlign: 'center',
@@ -78,6 +79,10 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         marginLeft: 160,
         marginTop: 20,
+    },
+    pad: {
+        marginBottom: 5,
+        marginRight: 40,
     }
   }));
 
@@ -102,7 +107,7 @@ const Services: React.FC = () => {
                 </Typography>
             </div>
             <Grid container justify="space-evenly">
-                <Grid item lg={4} md={4} sm={10} className={classes.container}>
+                <Grid item xs={4} className={classes.container}>
                     <Grid container className={classes.root}>
                         <Grid container direction="column" alignItems="center" alignContent="flex-start" className={classes.planes}>
                             <Typography><strong>PLAN BASIC</strong></Typography>
@@ -111,7 +116,7 @@ const Services: React.FC = () => {
                         </Grid>
                         <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
-                            <Grid container direction="column">
+                            <Grid container direction="column" style={{ marginTop: 50, marginLeft: 10 }}>
                                 <MonetizationOnIcon className={classes.icons}/>
                                 <PhoneInTalkIcon className={classes.icons}/>
                                 <Looks3Icon className={classes.icons}/>
@@ -121,23 +126,23 @@ const Services: React.FC = () => {
                             </Grid>
                         </Grid>
                         <Grid item xs={10}>
-                            <Grid container direction="column">
-                                <Typography style={{ marginBottom: 5 }}>
+                            <Grid container direction="column" style={{ marginTop: 50 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Precio competitivo:</strong> Te ofrecemos descuentos y bonificaciones en tus consultas.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Respuesta las 24hs:</strong> Frente a problemas urgentes, respuestas ágiles.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Asistencia:</strong> Podés hacer hasta 3 contactos por mes.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Abogado de Excelencia:</strong> Vinculación con expertos en las diferentes áreas.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Múltiples canales de atención:</strong> Calidad de atención y seguimiento del servicio.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Plataforma:</strong> Posibilidad de realizar consultas,  acceso a documentos, videos y club de beneficios.
                                 </Typography>
                             </Grid>
@@ -154,13 +159,13 @@ const Services: React.FC = () => {
                 <Grid item lg={4} md={4} sm={10} className={classes.container}>
                     <Grid container className={classes.root}>
                         <Grid container direction="column" alignItems="center" alignContent="flex-start" className={classes.planes}>
-                            <Typography><strong>PLAN BASIC</strong></Typography>
+                            <Typography><strong>PLAN PREMIUM</strong></Typography>
                             <Typography><strong>$1200</strong></Typography>
                             <Typography><strong>x mes</strong></Typography>
                         </Grid>
                             <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
-                            <Grid container direction="column">
+                            <Grid container direction="column" style={{ marginTop: 50, marginLeft: 10 }}>
                                 <MonetizationOnIcon className={classes.icons}/>
                                 <PhoneInTalkIcon className={classes.icons}/>
                                 <Looks3Icon className={classes.icons}/>
@@ -170,23 +175,23 @@ const Services: React.FC = () => {
                             </Grid>
                         </Grid>
                         <Grid item xs={10}>
-                            <Grid container direction="column">
-                                <Typography style={{ marginBottom: 5 }}>
+                            <Grid container direction="column" style={{ marginTop: 50 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Precio competitivo:</strong> Te ofrecemos descuentos y bonificaciones en tus consultas.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Respuesta las 24hs:</strong> Frente a problemas urgentes, respuestas ágiles.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
-                                    <strong>Asistencia:</strong> Podés hacer hasta 3 contactos por mes.
+                                <Typography className={classes.pad}>
+                                    <strong>Asistencia:</strong> Te acompañamos de manera ilimitada todo el mes.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Abogado de Excelencia:</strong> Vinculación con expertos en las diferentes áreas.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Múltiples canales de atención:</strong> Calidad de atención y seguimiento del servicio.
                                 </Typography>
-                                <Typography style={{ marginBottom: 5 }}>
+                                <Typography className={classes.pad}>
                                     <strong>Plataforma:</strong> Posibilidad de realizar consultas,  acceso a documentos, videos y club de beneficios.
                                 </Typography>
                             </Grid>
