@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginLeft: theme.spacing(7),
     marginRight: theme.spacing(12),
-    maxWidth: 100,
+    width: 100,
   },
   toolbar: {
     minHeight: 128,
@@ -30,10 +30,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 16,
     marginRight: 30,
     color: 'white',
+    fontWeight: 500,
   },
   icons: {
     marginRight: 20,
     color: 'white',
+    '&:hover': {
+      fontSize: 'calc(100% + 20px)',
+    }
   },
   buttonRoot: {
     position: 'absolute',
@@ -105,17 +109,17 @@ const Header: React.FC = () => {
               />
               <Link href="#services" style={{ textDecoration: 'none' }}>
                 <Typography className={classes.title} variant="h5" noWrap>
-                  <strong>Nuestros servicios</strong>
+                  Nuestros servicios
                 </Typography>
               </Link>
               <Link href="#stories" style={{ textDecoration: 'none' }}>
                 <Typography className={classes.title} variant="h5" noWrap>
-                  <strong>Porqué elegirnos</strong>
+                  Porqué elegirnos
                 </Typography>
               </Link>
               <Link href="#contacto" style={{ textDecoration: 'none' }}>
                 <Typography className={classes.title} variant="h5" noWrap>
-                  <strong>Contacto</strong>
+                  Contacto
                 </Typography>
               </Link>
               <Link href="https://instagram.com/ahoralegal?utm_medium=copy_link" target="_blank" color="inherit">
