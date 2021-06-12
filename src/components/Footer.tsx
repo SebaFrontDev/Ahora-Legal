@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
         marginRight: 5,
       },
     socialMedia: {
-        fontSize: 80,
+        fontSize: 50,
+        marginRight: 30,
     },
     foot: {
         color: 'white',
@@ -32,20 +33,20 @@ const Footer: React.FC = () => {
         <Grid id="contacto" container className={classes.root} wrap="nowrap">
             <Grid container alignItems="center" justify="space-evenly" direction="column">
                 <Grid container alignItems="center" justify="center">
-                  <RoomIcon className={classes.icons}/>
-                  <Typography>Córdoba- Argentina</Typography>
+                  <RoomIcon className={classes.icons} style={{ marginTop: 30 }}/>
+                  <p style={{ paddingTop: 30 }}>Córdoba- Argentina</p>
                 </Grid>
                 <Grid container alignItems="center" justify="center">
-                  <MailIcon className={classes.icons}/>
-                  <Typography>ahoralegal@gmail.com</Typography>
+                  <MailIcon className={classes.icons} style={{ marginBottom: 30 }}/>
+                  <p style={{ paddingBottom: 30 }}>ahoralegal@gmail.com</p>
                 </Grid>
             </Grid>
             <Grid container alignItems="center" justify="space-evenly" direction="column">
-                <Link href="#top" style={{ textDecoration: 'none', color: 'black' }}>Beneficios</Link>
+                <Link href="#top" style={{ textDecoration: 'none', color: 'black', paddingTop: 30 }}>Beneficios</Link>
                 <Link href="#top" style={{ textDecoration: 'none', color: 'black' }}>Servicios</Link>
-                <Link href="#top" style={{ textDecoration: 'none', color: 'black' }}>Bases y condiciones</Link>
+                <Link href="#top" style={{ textDecoration: 'none', color: 'black', paddingBottom: 30 }}>Bases y condiciones</Link>
             </Grid>
-            <Grid container alignItems="center" justify="space-evenly">
+            <Grid container alignItems="center" justify="center">
             <Link href="https://instagram.com/ahoralegal?utm_medium=copy_link" target="_blank" color="inherit">
               <InstagramIcon className={classes.socialMedia}/>
             </Link>
