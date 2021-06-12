@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft: 30,
         position: 'relative',
         width: '100%',
-        overflow: 'hidden',
         marginBottom: 100,
     },
     arrowRight: {
