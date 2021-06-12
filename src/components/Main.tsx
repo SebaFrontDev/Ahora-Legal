@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         position: 'absolute',
         width: '22%',
+        maxWidth: 340,
         overflow: 'hidden',
     },
     title: {
