@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const MobileSuccessStories: React.FC = () => {
+const MobileSuccessStories = () => {
     const classes = useStyles();
     const [current, setCurrent] = useState(0);
 
