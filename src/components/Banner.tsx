@@ -2,8 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import banner from '../assets/banner.svg';
-import bannerLeft from '../assets/bannerLeft.svg';
+import banner from '../assets/banner.png';
+import bannerLeft from '../assets/bannerLeft.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {

@@ -13,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo_en_blanco.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {

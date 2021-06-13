@@ -11,29 +11,31 @@ import Button from '@material-ui/core/Button';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Typography from '@material-ui/core/Typography';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo_en_blanco.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  appbar: {
+    background: 'transparent',
+    boxShadow: 'none',
+  },
   menuButton: {
-    marginLeft: theme.spacing(7),
-    marginRight: theme.spacing(12),
     width: 100,
   },
   toolbar: {
     minHeight: 128,
-    alignItems: 'center',
+    width: '66%'
   },
   title: {
     fontSize: 16,
-    marginRight: 30,
     color: 'white',
     fontWeight: 500,
   },
   icons: {
-    marginRight: 20,
+    position: 'relative',
+    bottom: -2.5,
     color: 'white',
     '&:hover': {
       fontSize: 'calc(100% + 20px)',
@@ -91,43 +93,42 @@ const Header: React.FC = () => {
   const classes = useStyles();
     return (
         <>
-        <Grid item lg={12} md={12} sm={12}>
+        <Grid>
           <Hero />
           <AppBar
             position="absolute"
             color="transparent"
-            style={{
-              background: 'transparent',
-              boxShadow: 'none'
-              }}
+            className={classes.appbar}
           >
             <Toolbar id="top" className={classes.toolbar}>
-              <img
-                className={classes.menuButton}
-                src={logo}
-                alt="Ahora legal logo"
-              />
-              <Link href="#services" style={{ textDecoration: 'none' }}>
-                <Typography className={classes.title} variant="h5" noWrap>
-                  Nuestros servicios
-                </Typography>
-              </Link>
-              <Link href="#stories" style={{ textDecoration: 'none' }}>
-                <Typography className={classes.title} variant="h5" noWrap>
-                  Porqué elegirnos
-                </Typography>
-              </Link>
-              <Link href="#contacto" style={{ textDecoration: 'none' }}>
-                <Typography className={classes.title} variant="h5" noWrap>
-                  Contacto
-                </Typography>
-              </Link>
-              <Link href="https://instagram.com/ahoralegal?utm_medium=copy_link" target="_blank" color="inherit">
-                <InstagramIcon className={classes.icons}/>
-              </Link>
-              <Link href="https://www.facebook.com/Ahoralegal-108866178055399" target="_blank" color="inherit">
-                <FacebookIcon className={classes.icons}/>
-              </Link>
+              <Grid container alignItems="center" justify="space-evenly" style={{ paddingRight: 10 }}>
+                <img
+                  className={classes.menuButton}
+                  src={logo}
+                  alt="Ahora legal logo"
+                />
+                <Link href="#services" style={{ textDecoration: 'none' }}>
+                  <Typography className={classes.title} variant="h5" noWrap>
+                    Nuestros servicios
+                  </Typography>
+                </Link>
+                <Link href="#stories" style={{ textDecoration: 'none' }}>
+                  <Typography className={classes.title} variant="h5" noWrap>
+                    Porqué elegirnos
+                  </Typography>
+                </Link>
+                <Link href="#contacto" style={{ textDecoration: 'none' }}>
+                  <Typography className={classes.title} variant="h5" noWrap>
+                    Contacto
+                  </Typography>
+                </Link>
+                <Link href="https://instagram.com/ahoralegal?utm_medium=copy_link" target="_blank" color="inherit">
+                  <InstagramIcon className={classes.icons}/>
+                </Link>
+                <Link href="https://www.facebook.com/Ahoralegal-108866178055399" target="_blank" color="inherit">
+                  <FacebookIcon className={classes.icons}/>
+                </Link>
+              </Grid>
             </Toolbar>
           </AppBar>
           <Grid container alignContent="flex-end" className={classes.buttonRoot}>
