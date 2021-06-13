@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import MobileImg from '../assetsMobile/MobileImg.png';
-import bannerLeft from '../assets/bannerLeft.svg';
+import bannerLeft from '../assets/bannerLeft.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
