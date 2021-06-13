@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     planes: {
         position: 'absolute',
         color: 'white',
-        marginLeft: 160,
+        marginLeft: 140,
         marginTop: 20,
     },
     pad: {

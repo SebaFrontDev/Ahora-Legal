@@ -29,7 +29,7 @@ const MobileFooter: React.FC = () => {
     const classes = useStyles();
     return (
         <>
-        <Grid id="contacto" container direction="column" className={classes.root} alignItems="center" justify="space-evenly">
+        <Grid container direction="column" className={classes.root} alignItems="center" justify="space-evenly">
             <Typography variant="h5"><strong>Seguinos en nuestras redes</strong></Typography>
                 <Grid container justify="space-evenly">
                     <Link href="https://instagram.com/ahoralegal?utm_medium=copy_link" target="_blank" color="inherit">

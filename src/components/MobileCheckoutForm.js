@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card2: {
         backgroundColor: '#ff9e17',
-        height: 800,
+        height: 700,
     },
     inputs: {
         width: '90%',
@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 20,
         backgroundColor: '#f8c47c',
         border: 'none',
+        paddingLeft: 20
     },
       buttonContainer: {
         backgroundColor: '#fff',
@@ -69,54 +70,52 @@ const MobileCheckoutForm = (props) => {
     return(
         <>
         <Grid container direction="column" justify="flex-end" className={classes.card2}>
-            <Grid>
-                <Grid container direction="column" style={{ paddingLeft: 20 }}>
-                    <Typography variant="subtitle1" align="center">
-                        <strong>Dejanos tu consulta y dentro de las 24 hs te respoderemos</strong>
-                    </Typography>
-                    <Grid container justify="center">
-                        <form onSubmit={handleSubmit} >
-                            <input
+            <Grid container direction="column" style={{ paddingLeft: 20 }}>
+                <Typography id="contacto" variant="subtitle1" align="center" style={{ paddingBottom: 50 }}>
+                    <strong>Dejanos tu consulta y dentro de las 24 hs te respoderemos</strong>
+                </Typography>
+                <Grid container justify="center">
+                    <form onSubmit={handleSubmit} >
+                        <input
                             id="Nombre"
                             placeholder="Nombre"
                             autoComplete="name"
                             type="text"
                             className={classes.inputs}
                             onChange={handleInput}
-                            />
-                            <input
+                        />
+                        <input
                             id="Email"
                             placeholder="Email"
                             autoComplete="email"
                             type="email"
                             className={classes.inputs}
                             onChange={handleInput}
-                            />
-                            <input
+                        />
+                        <input
                             id="Telefono"
                             placeholder="Teléfono"
                             autoComplete="tel"
                             type="number"
                             className={classes.inputs}
                             onChange={handleInput}
-                            />
-                            <input
+                        />
+                        <input
                             id="Consulta"
                             placeholder="Consulta"
                             type="text"
                             className={classes.inputs}
                             style={{ height: 100 }}
                             onChange={handleInput}
-                            />
-                            <Grid item>
-                                <Grid className={classes.buttonContainer}>
-                                    <Button type="submite" className={classes.button} href="#top">
-                                        Enviar
-                                    </Button>
-                                </Grid>
+                        />
+                        <Grid container justify="center">
+                            <Grid className={classes.buttonContainer}>
+                                <Button type="submite" className={classes.button} href="#top">
+                                    Enviar
+                                </Button>
                             </Grid>
-                        </form>
-                    </Grid>
+                        </Grid>
+                    </form>
                 </Grid>
             </Grid>
         </Grid>

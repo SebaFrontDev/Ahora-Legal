@@ -20,7 +20,7 @@ import inquiries from '../inquiries';
 const useStyles = makeStyles((theme) => ({
     root: {
         position: 'relative',
-        bottom: 160
+        bottom: 200
     },
     title: {
         display: 'flex',
