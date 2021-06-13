@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import cellPhoneImg from '../assets/cellPhoneImg.svg';
 import ahoaraLegalLogo from '../assets/ahoraLegalLogo.svg';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import RedLogo from '../assetsMobile/RedLogo.png';
+import RedLogo from '../assets/logo_color.png';
 import inquiries from '../inquiries';
 
 const useStyles = makeStyles((theme) => ({

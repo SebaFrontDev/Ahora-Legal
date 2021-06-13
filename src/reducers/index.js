@@ -1,4 +1,4 @@
-const reducer = (state: any, action: { type: any; payload: any; }) => {
+const reducer = (state, action) => {
     return {
         ...state,
         user: action.payload,
