@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Carousel from 'react-grid-carousel';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
@@ -18,10 +19,8 @@ import inquiries from '../inquiries';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        position: 'absolute',
-        width: '22%',
-        maxWidth: 340,
-        overflow: 'hidden',
+        position: 'relative',
+        bottom: 160
     },
     title: {
         display: 'flex',
@@ -37,12 +36,15 @@ const useStyles = makeStyles((theme) => ({
     redLogo: {
         width: 100,
         position: 'absolute',
-        paddingBottom: 400,
+        marginTop: 130
     },
     image: {
-        width: 345,
+        width: 380,
     },
     arrowRight: {
+        position: 'absolute',
+        right: 0,
+        bottom: 50,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
@@ -50,23 +52,22 @@ const useStyles = makeStyles((theme) => ({
         color: 'red',
     },
     arrowLeft: {
+        position: 'absolute',
+        left: 0,
+        bottom: 50,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
         userSelect: 'none',
         color: 'red',
     },
-    slide: {
-        opacity: 0,
-        transitionDuration: '1s ease',
+    card: {
+        maxWidth: 250,
+        marginLeft: 20
     },
-    slideActive: {
-        opacity: 1,
-        transitionDuration: '1s',
-    }
   }));
 
-const Main: React.FC = () => {
+const Main = () => {
     const classes = useStyles();
     const [current, setCurrent] = useState(0);
 
@@ -87,7 +88,7 @@ const Main: React.FC = () => {
 
     return(
         <>
-        <Container style={{ overflow: 'hidden' }}>
+        <Container>
             <div className={classes.title}>
                 <img
                     className={classes.logo}
@@ -98,9 +99,9 @@ const Main: React.FC = () => {
                     <strong>¿Qué podés consultar?</strong>
                 </Typography>
             </div>
-            <Grid container spacing={2} alignItems="center">
+            <Grid container alignItems="center">
                 <Grid item xs={4}>
-                    <Grid container justify="space-around">
+                    <Grid container justify="space-around" className={classes.root}>
                         <Grid item>
                             <Grid container direction="column">
                                 <img src={asuntosCiviles} alt="Asuntos civiles logo" />
@@ -120,7 +121,7 @@ const Main: React.FC = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={4}>
-                    <Grid container alignItems="center" justify="center">
+                    <Grid container justify="center">
                         <img
                             className={classes.image}
                             src={cellPhoneImg}
@@ -131,40 +132,34 @@ const Main: React.FC = () => {
                             src={RedLogo}
                             alt="Logo rojo"
                         />
-                        <Grid
-                            container
-                            className={classes.root}
-                            alignItems="center"
-                            wrap="nowrap"
-                        >
-                            <NavigateBeforeIcon className={classes.arrowLeft} onClick={prevSlide} />
+                        <Carousel
+                            cols={1}
+                            rows={1}
+                            loop
+                            containerStyle={{ maxWidth: 330, bottom: 500 }}
+                            mobileBreakpoint={670}
+                            arrowRight={<NavigateNextIcon className={classes.arrowRight} />}
+                            arrowLeft={<NavigateBeforeIcon className={classes.arrowLeft} />}
+                            >
                                 {inquiries.map((slide, index) => {
                                     return(
-                                        <Grid
-                                            item
-                                            key={index}
-                                            className={index === current ? classes.slideActive : classes.slide}
-                                        >
-                                            {index === current && 
-                                                <Grid container direction="column">
+                                        <Carousel.Item key={index}>
+                                                <Grid container direction="column" className={classes.card}>
                                                     <img
-                                                        className=""
                                                         src={slide.url}
                                                         alt={slide.title}
                                                     />
                                                     <Typography variant="subtitle1" align="center"><strong>{slide.title}</strong></Typography>
                                                     <Typography variant="body2" align="center">{slide.subtitle}</Typography>
-                                                </Grid> 
-                                            }
-                                        </Grid>
+                                                </Grid>
+                                        </Carousel.Item>
                                     )})
                                 }
-                            <NavigateNextIcon className={classes.arrowRight} onClick={nextSlide} />
-                        </Grid>
+                        </Carousel>
                     </Grid>
                 </Grid>
                 <Grid item xs={4}>
-                    <Grid container justify="space-around">
+                    <Grid container justify="space-around" className={classes.root}>
                         <Grid item>
                             <Grid container direction="column">
                                 <img src={penales} alt="Asuntos penales logo" />
