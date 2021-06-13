@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 20,
     },
     pad: {
-        marginBottom: 5,
+        marginTop: 10,
         marginRight: 40,
     }
   }));
@@ -115,7 +115,7 @@ const Services: React.FC = () => {
                         </div>
                         <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
-                            <Grid container direction="column" style={{ marginTop: 50}}>
+                            <Grid container direction="column" justify="space-evenly" style={{ marginTop: 50, height: '90%'}}>
                                 <img src={pesos} alt="simbolo de pesos" className={classes.icons}/>
                                 <img src={horas} alt="simbolo 24 horas" className={classes.icons}/>
                                 <img src={asistencias} alt="simbolo de numero tres" className={classes.icons}/>
@@ -164,7 +164,7 @@ const Services: React.FC = () => {
                         </div>
                             <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
-                            <Grid container direction="column" style={{ marginTop: 50}}>
+                            <Grid container direction="column" justify="space-evenly" style={{ marginTop: 50, height: '90%' }}>
                                 <img src={pesos} alt="simbolo de pesos" className={classes.icons}/>
                                 <img src={horas} alt="simbolo 24 horas" className={classes.icons}/>
                                 <img src={asistencias} alt="simbolo de numero tres" className={classes.icons}/>

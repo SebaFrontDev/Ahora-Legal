@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     buttonContainer: {
         backgroundColor: '#fe5e11',
         borderRadius: 20,
-        marginTop: 15,
+        marginTop: 50,
         width: 200,
         height: 40,
         textAlign: 'center',
@@ -68,9 +68,6 @@ const useStyles = makeStyles((theme) => ({
         position: 'absolute',
         color: 'white',
         marginTop: 30,
-    },
-    icons: {
-        marginBottom: 25
     }
   }));
 
@@ -103,33 +100,33 @@ const MobileServices: React.FC = () => {
                     </div>
                     <img src={planBasic} alt="fondo naranja"/>
                     <Grid item xs={2}>
-                        <Grid container justify="space-evenly" direction="column" style={{ marginTop: 50 }}>
-                            <img src={pesos} alt="simbolo de pesos" className={classes.icons}/>
-                            <img src={horas} alt="simbolo de horas" className={classes.icons}/>
-                            <img src={asistencias} alt="simbolo de asistencias" className={classes.icons}/>
-                            <img src={abogados} alt="simbolo de abogados" className={classes.icons}/>
-                            <img src={multiples} alt="simbolo de consultas" className={classes.icons}/>
-                            <img src={plataforma} alt="simbolo de celular" className={classes.icons}/>
+                        <Grid container justify="space-evenly" direction="column" style={{ marginTop: 50, height: '90%' }}>
+                            <img src={pesos} alt="simbolo de pesos" />
+                            <img src={horas} alt="simbolo de horas" />
+                            <img src={asistencias} alt="simbolo de asistencias" />
+                            <img src={abogados} alt="simbolo de abogados" />
+                            <img src={multiples} alt="simbolo de consultas" />
+                            <img src={plataforma} alt="simbolo de celular" />
                         </Grid>
                     </Grid>
                     <Grid item xs={10}>
-                        <Grid container direction="column" style={{ marginTop: 50, marginBottom: 50 }}>
-                            <Typography style={{ marginBottom: 10 }}>
+                        <Grid container direction="column" style={{ marginTop: 50 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Precio competitivo:</strong> Te ofrecemos descuentos y bonificaciones en tus consultas.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Respuesta las 24hs:</strong> Frente a problemas urgentes, respuestas ágiles.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Asistencia:</strong> Podés hacer hasta 3 contactos por mes.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Abogado de Excelencia:</strong> Vinculación con expertos en las diferentes áreas.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Múltiples canales de atención:</strong> Calidad de atención y seguimiento del servicio.
                             </Typography>
-                            <Typography style={{ marginBottom: 5 }}>
+                            <Typography style={{ marginTop: 5 }}>
                                 <strong>Plataforma:</strong> Posibilidad de realizar consultas,  acceso a documentos, videos y club de beneficios.
                             </Typography>
                         </Grid>
@@ -150,33 +147,33 @@ const MobileServices: React.FC = () => {
                     </div>
                         <img src={planBasic} alt="fondo naranja"/>
                     <Grid item xs={2}>
-                        <Grid container justify="space-between" direction="column" style={{ marginTop: 50 }}>
-                            <img src={pesos} alt="simbolo de pesos" className={classes.icons} />
-                            <img src={horas} alt="simbolo de horas" className={classes.icons} />
-                            <img src={asistencias} alt="simbolo de asistencias" className={classes.icons} />
-                            <img src={abogados} alt="simbolo de abogados" className={classes.icons} />
-                            <img src={multiples} alt="simbolo de consultas" className={classes.icons} />
-                            <img src={plataforma} alt="simbolo de celular" className={classes.icons} />
+                        <Grid container justify="space-evenly" direction="column" style={{ marginTop: 50, height: '90%' }}>
+                            <img src={pesos} alt="simbolo de pesos" />
+                            <img src={horas} alt="simbolo de horas" />
+                            <img src={asistencias} alt="simbolo de asistencias" />
+                            <img src={abogados} alt="simbolo de abogados" />
+                            <img src={multiples} alt="simbolo de consultas" />
+                            <img src={plataforma} alt="simbolo de celular" />
                         </Grid>
                     </Grid>
                     <Grid item xs={10}>
-                        <Grid container direction="column" style={{ marginTop: 50, marginBottom: 50 }}>
-                            <Typography style={{ marginBottom: 10 }}>
+                        <Grid container direction="column" style={{ marginTop: 50 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Precio competitivo:</strong> Te ofrecemos descuentos y bonificaciones en tus consultas.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Respuesta las 24hs:</strong> Frente a problemas urgentes, respuestas ágiles.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Asistencia:</strong> Te acompañamos de manera ilimitada todo el mes.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Abogado de Excelencia:</strong> Vinculación con expertos en las diferentes áreas.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Múltiples canales de atención:</strong> Calidad de atención y seguimiento del servicio.
                             </Typography>
-                            <Typography style={{ marginBottom: 10 }}>
+                            <Typography style={{ marginTop: 10 }}>
                                 <strong>Plataforma:</strong> Posibilidad de realizar consultas,  acceso a documentos, videos y club de beneficios.
                             </Typography>
                         </Grid>

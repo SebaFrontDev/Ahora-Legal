@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { registerRequest } from '../actions';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import balanza from '../assets/balanza.svg';
@@ -102,6 +101,17 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
           backgroundColor: '#0a0420',
         }
+      },
+      tuMail:{
+        backgroundColor: '#fff',
+        height: 50,
+        borderRadius: 20,
+        marginBottom: 20,
+        paddingLeft: 10,
+        '&::placeholder': {
+            fontSize: 18
+        }
+
       }
   }));
 
@@ -144,16 +154,21 @@ const CheckoutForm = (props) => {
                                 <Typography variant="subtitle1" align="center">
                                     Un correo al mes no hace daño a nadie
                                 </Typography>
-                                <Grid container>
-                                <TextField id="tu mail" label="tu mail @" variant="filled" style={{ backgroundColor: '#fff', height: 50, borderRadius: 20 }} />
-                                </Grid>
-                                <Grid container>
-                                    <Grid className={classes.buttonContainer}>
-                                        <Button type="submite" className={classes.button} href="#top">
+                                <form onSubmit={handleSubmit}>
+                                    <input
+                                    type="email"
+                                    id="tu mail"
+                                    placeholder="tu mail @"
+                                    autoComplete="email"
+                                    className={classes.tuMail}
+                                    onChange={handleInput}
+                                    />
+                                    <div className={classes.buttonContainer}>
+                                        <Button type="submit" className={classes.button} href="#top">
                                             Enviar
                                         </Button>
-                                    </Grid>
-                                </Grid>
+                                    </div>
+                                </form>
                             </Grid>
                         </Grid>
                     </Grid>
