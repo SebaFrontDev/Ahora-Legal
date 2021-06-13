@@ -64,9 +64,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        width: '100%',
         position: 'absolute',
         color: 'white',
-        marginTop: 10,
+        marginTop: 30,
     },
     icons: {
         marginBottom: 25

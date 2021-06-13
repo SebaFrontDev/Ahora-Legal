@@ -71,9 +71,12 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     planes: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
         position: 'absolute',
         color: 'white',
-        marginLeft: 140,
         marginTop: 20,
     },
     pad: {
@@ -105,11 +108,11 @@ const Services: React.FC = () => {
             <Grid container justify="space-evenly">
                 <Grid item xs={4} className={classes.container}>
                     <Grid container className={classes.root}>
-                        <Grid container direction="column" alignItems="center" alignContent="flex-start" className={classes.planes}>
+                        <div className={classes.planes}>
                             <Typography><strong>PLAN BASIC</strong></Typography>
                             <Typography><strong>$850</strong></Typography>
                             <Typography><strong>x mes</strong></Typography>
-                        </Grid>
+                        </div>
                         <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
                             <Grid container direction="column" style={{ marginTop: 50}}>
@@ -154,11 +157,11 @@ const Services: React.FC = () => {
                 </Grid>
                 <Grid item lg={4} md={4} sm={10} className={classes.container}>
                     <Grid container className={classes.root}>
-                        <Grid container direction="column" alignItems="center" alignContent="flex-start" className={classes.planes}>
+                        <div className={classes.planes}>
                             <Typography><strong>PLAN PREMIUM</strong></Typography>
                             <Typography><strong>$1200</strong></Typography>
                             <Typography><strong>x mes</strong></Typography>
-                        </Grid>
+                        </div>
                             <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
                             <Grid container direction="column" style={{ marginTop: 50}}>
