@@ -5,6 +5,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import cellPhoneImg from '../assets/cellPhoneImg.svg';
 import ahoaraLegalLogo from '../assets/ahoraLegalLogo.svg';
+import RedLogo from '../assets/logo_color.png';
 import asuntosCiviles from '../assets/asuntosCiviles.svg';
 import comerciales from '../assets/comerciales.svg';
 import penales from '../assets/penales.svg';
@@ -32,6 +33,11 @@ const useStyles = makeStyles((theme) => ({
     logo: {
         width: 30,
         marginRight: 10,
+    },
+    redLogo: {
+        width: 100,
+        position: 'absolute',
+        paddingBottom: 400,
     },
     image: {
         width: 345,
@@ -119,6 +125,11 @@ const Main: React.FC = () => {
                             className={classes.image}
                             src={cellPhoneImg}
                             alt="imagen de celular"
+                        />
+                        <img
+                            className={classes.redLogo}
+                            src={RedLogo}
+                            alt="Logo rojo"
                         />
                         <Grid
                             container
