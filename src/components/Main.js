@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Carousel from 'react-grid-carousel';
 import Typography from '@material-ui/core/Typography';
@@ -69,22 +69,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Main = () => {
     const classes = useStyles();
-    const [current, setCurrent] = useState(0);
-
-    const nextSlide = () => {
-        if(current === inquiries.length - 1){
-            setCurrent(0)
-        } else {
-            setCurrent(current + 1)
-        }
-    };
-    const prevSlide = () => {
-        if(current === 0){
-            setCurrent(inquiries.length - 1)
-        } else {
-            setCurrent(current - 1)
-        }
-    };
 
     return(
         <>

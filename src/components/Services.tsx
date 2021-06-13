@@ -6,12 +6,12 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import ahoaraLegalLogo from '../assets/ahoraLegalLogo.svg';
 import planBasic from '../assets/planBasic.svg';
-import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-import Looks3Icon from '@material-ui/icons/Looks3';
-import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
-import PeopleIcon from '@material-ui/icons/People';
-import HowToRegIcon from '@material-ui/icons/HowToReg';
-import SettingsCellIcon from '@material-ui/icons/SettingsCell';
+import pesos from '../assets/pesos.png';
+import asistencias from '../assets/3asistencias.png';
+import horas from '../assets/24hs.png';
+import abogados from '../assets/abogados.png';
+import multiples from '../assets/multiples.png';
+import plataforma from '../assets/plataforma.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 100,
         marginBottom: 100,
     },
     subTitle: {
@@ -48,10 +47,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: 10,
     },
     icons: {
-        fontSize: 50,
-        marginBottom: 12,
         marginTop: 5,
-        color: '#ff9e17',
     },
     buttonContainer: {
         backgroundColor: '#fe5e11',
@@ -116,13 +112,13 @@ const Services: React.FC = () => {
                         </Grid>
                         <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
-                            <Grid container direction="column" style={{ marginTop: 50, marginLeft: 10 }}>
-                                <MonetizationOnIcon className={classes.icons}/>
-                                <PhoneInTalkIcon className={classes.icons}/>
-                                <Looks3Icon className={classes.icons}/>
-                                <PeopleIcon className={classes.icons}/>
-                                <HowToRegIcon className={classes.icons}/>
-                                <SettingsCellIcon className={classes.icons}/>
+                            <Grid container direction="column" style={{ marginTop: 50}}>
+                                <img src={pesos} alt="simbolo de pesos" className={classes.icons}/>
+                                <img src={horas} alt="simbolo 24 horas" className={classes.icons}/>
+                                <img src={asistencias} alt="simbolo de numero tres" className={classes.icons}/>
+                                <img src={abogados} alt="simbolo de personas" className={classes.icons}/>
+                                <img src={multiples} alt="simbolo de consultas" className={classes.icons}/>
+                                <img src={plataforma} alt="simbolo de celular" className={classes.icons}/>
                             </Grid>
                         </Grid>
                         <Grid item xs={10}>
@@ -165,13 +161,13 @@ const Services: React.FC = () => {
                         </Grid>
                             <img src={planBasic} alt="fondo naranja"/>
                         <Grid item xs={2}>
-                            <Grid container direction="column" style={{ marginTop: 50, marginLeft: 10 }}>
-                                <MonetizationOnIcon className={classes.icons}/>
-                                <PhoneInTalkIcon className={classes.icons}/>
-                                <Looks3Icon className={classes.icons}/>
-                                <PeopleIcon className={classes.icons}/>
-                                <HowToRegIcon className={classes.icons}/>
-                                <SettingsCellIcon className={classes.icons}/>
+                            <Grid container direction="column" style={{ marginTop: 50}}>
+                                <img src={pesos} alt="simbolo de pesos" className={classes.icons}/>
+                                <img src={horas} alt="simbolo 24 horas" className={classes.icons}/>
+                                <img src={asistencias} alt="simbolo de numero tres" className={classes.icons}/>
+                                <img src={abogados} alt="simbolo de personas" className={classes.icons}/>
+                                <img src={multiples} alt="simbolo de consultas" className={classes.icons}/>
+                                <img src={plataforma} alt="simbolo de celular" className={classes.icons}/>
                             </Grid>
                         </Grid>
                         <Grid item xs={10}>

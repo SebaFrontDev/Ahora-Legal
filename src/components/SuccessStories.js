@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     arrowRight: {
         position: 'absolute',
         right: 0,
-        bottom: 150,
+        bottom: 350,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     arrowLeft: {
         position: 'absolute',
         left: 0,
-        bottom: 150,
+        bottom: 350,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         maxWidth: 300,
+        height: 350,
         marginLeft: 180
     },
   }));
@@ -73,6 +74,7 @@ const SuccessStories = () => {
               rows={1}
               gap={11}
               loop
+              containerStyle={{ boxShadow: '5px 10px 8px #888888', paddingBottom: 200 }}
               responsiveLayout={[
                   {
                       breakpoint: 1200,

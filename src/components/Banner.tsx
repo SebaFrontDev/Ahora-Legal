@@ -31,11 +31,8 @@ const useStyles = makeStyles((theme) => ({
 const Banner: React.FC = () => {
     const classes = useStyles();
 
-    const screenSize = window.innerWidth;
-
     return(
         <>
-        {screenSize > 800 ? 
             <Grid container className={classes.root} wrap="nowrap">
                 <Grid item>
                 <img src={bannerLeft} alt="banner left" className={classes.bannerLeft}/>  
@@ -55,27 +52,6 @@ const Banner: React.FC = () => {
                 <img src={banner} alt="banner" className={classes.banner}/>  
                 </Grid>
             </Grid>
-        :
-            <Grid container className={classes.root}>
-                <Grid item>
-                <img src={bannerLeft} alt="banner left" className={classes.bannerLeft}/>  
-                </Grid>
-                <Grid item className={classes.text}>
-                    <Grid container  alignItems="center" className={classes.card}>
-                        <Typography variant="h5"><strong>PROXIMAMENTE</strong></Typography>
-                        <Typography component="p">
-                            Plataforma exclusiva para nuestros clientes.
-                            Con ella  podrán acceder y tener toda la información
-                            de asesoramientos, profesionales, etc. Además de recibir
-                            asistencia por WhatsApp o teléfono.
-                        </Typography>
-                    </Grid>
-                </Grid>
-                <Grid item>
-                <img src={banner} alt="banner" className={classes.banner}/>  
-                </Grid>
-            </Grid>
-        }
         </>
     )
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './Hero';
 import { makeStyles } from '@material-ui/core/styles';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import whatsapp from '../assets/whatsapp.png';
 import Card from '@material-ui/core/Card';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -69,15 +69,13 @@ const useStyles = makeStyles((theme) => ({
   },
   fab: {
     position: 'fixed',
-    bottom: 35,
-    right: 35,
-    color: 'green',
-    fontSize: 50,
+    bottom: 60,
+    right: 10,
     zIndex: 2,
   },
   card: {
     position: 'fixed',
-    bottom: 10,
+    bottom: 30,
     right: 70,
     height: 40,
     width: 250,
@@ -140,7 +138,7 @@ const Header: React.FC = () => {
           </Grid>
         </Grid>
         <Link href="https://api.whatsapp.com/send?phone=3517727577" target="_blank">
-          <WhatsAppIcon className={classes.fab}/>
+          <img src={whatsapp} alt="icono de whatsapp" className={classes.fab}/>
           </Link>
         <Link href="https://api.whatsapp.com/send?phone=3517727577" target="_blank">
           <Card className={classes.card}>

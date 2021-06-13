@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HeroMobile from './HeroMobile';
 import { makeStyles } from '@material-ui/core/styles';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import whatsapp from '../assets/whatsapp.png';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import AppBar from '@material-ui/core/AppBar';
@@ -59,8 +59,6 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     bottom: 10,
     right: 10,
-    color: 'green',
-    fontSize: 50,
     zIndex: 10,
   }
 }));
@@ -157,7 +155,7 @@ const MobileHeader: React.FC = () => {
             </Grid>
           </Grid>
         <Link href="https://api.whatsapp.com/send?phone=3517727577" target="_blank">
-          <WhatsAppIcon className={classes.fab}/>
+          <img src={whatsapp} alt="icono de whatsapp" className={classes.fab}/>
           </Link>
     </>
     )

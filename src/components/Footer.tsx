@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
     const classes = useStyles();
     return (
         <>
-        <Grid id="contacto" container className={classes.root} wrap="nowrap">
+        <Grid container className={classes.root} wrap="nowrap">
             <Grid container alignItems="center" justify="space-evenly" direction="column">
                 <Grid container alignItems="center" justify="center">
                   <RoomIcon className={classes.icons} style={{ marginTop: 30 }}/>

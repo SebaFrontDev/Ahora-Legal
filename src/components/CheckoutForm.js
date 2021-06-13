@@ -80,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 10,
         backgroundColor: '#f8c47c',
         border: 'none',
+        paddingLeft: 20,
     },
       buttonContainer: {
         backgroundColor: '#fe5e11',
@@ -127,7 +128,7 @@ const CheckoutForm = (props) => {
     const classes = useStyles();
     return(
         <>
-        <Grid container id="form" style={{ marginBottom: 100, overflow: 'hidden' }}>
+        <Grid container id="contacto" style={{ marginBottom: 100, overflow: 'hidden' }}>
             <Grid item xs={4}>
                 <Grid container justify="flex-start" alignItems="center">
                     <Grid container className={classes.basesContainer}>
@@ -144,7 +145,7 @@ const CheckoutForm = (props) => {
                                     Un correo al mes no hace daño a nadie
                                 </Typography>
                                 <Grid container>
-                                <TextField id="tu mail" label="tu mail @" variant="filled" style={{ backgroundColor: '#fff', height: 50, borderRadius: 20}} />
+                                <TextField id="tu mail" label="tu mail @" variant="filled" style={{ backgroundColor: '#fff', height: 50, borderRadius: 20 }} />
                                 </Grid>
                                 <Grid container>
                                     <Grid className={classes.buttonContainer}>
