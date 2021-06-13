@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Carousel from 'react-grid-carousel';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     arrowRight: {
         position: 'absolute',
         right: 0,
+        bottom: 150,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
@@ -28,28 +30,11 @@ const useStyles = makeStyles((theme) => ({
     arrowLeft: {
         position: 'absolute',
         left: 0,
+        bottom: 150,
         fontSize: '3rem',
         zIndex: 10,
         cursor: 'pointer',
         userSelect: 'none',
-    },
-    slide: {
-        opacity: 0.5,
-        transitionDuration: '1s ease',
-        transform: 'scale(0.5)',
-    },
-    slideActive: {
-        opacity: 1,
-        transitionDuration: '1s',
-    },
-    carouselWrapper: {
-        position: 'relative',
-    },
-    carouselContainer: {
-        overflowX: 'hidden',
-    },
-    carouselItem:{
-        maxWidth: 300,
     },
     title: {
         display: 'flex',
@@ -62,26 +47,14 @@ const useStyles = makeStyles((theme) => ({
         width: 30,
         marginRight: 10,
     },
+    card: {
+        maxWidth: 300,
+        marginLeft: 180
+    },
   }));
 
-const SuccessStories: React.FC = () => {
+const SuccessStories = () => {
     const classes = useStyles();
-    const [current, setCurrent] = useState(0);
-
-    const nextSlide = () => {
-        if(current === successStories.length - 1 ){
-            setCurrent(0)
-        } else {
-            setCurrent(current + 1)
-        }
-    };
-    const prevSlide = () => {
-        if(current === 0){
-            setCurrent(successStories.length - 1)
-        } else {
-            setCurrent(current - 1)
-        }
-    };
 
     return(
         <>
@@ -95,23 +68,30 @@ const SuccessStories: React.FC = () => {
                 <strong>Consultas Resueltas</strong>
             </Typography>
         </div>
-            <Grid
-              container
-              className={classes.root}
-              alignItems="center"
-              justify="center"
-              wrap="nowrap"
+            <Carousel
+              cols={2}
+              rows={1}
+              gap={11}
+              loop
+              responsiveLayout={[
+                  {
+                      breakpoint: 1200,
+                      cols: 2
+                  },
+                  {
+                      breakpoint: 990,
+                      cols: 1
+                  }
+              ]}
+              mobileBreakpoint={670}
+              arrowRight={<NavigateNextIcon className={classes.arrowRight} />}
+              arrowLeft={<NavigateBeforeIcon className={classes.arrowLeft} />}
             >
-              <NavigateBeforeIcon className={classes.arrowLeft} onClick={prevSlide} />
               {successStories.map((slide, index) => {
                     return(
-                        <Grid
-                            item
-                            key={index}
-                            className={index === current ? classes.slideActive : classes.slide}
-                        >
-                             <Card className={classes.carouselContainer}>
-                                <CardContent className={classes.carouselItem}>
+                        <Carousel.Item key={index}>
+                             <Card className={classes.card}>
+                                <CardContent>
                                     <Grid container justify="center">
                                     <img src={estrella} alt="estrella" />
                                     <img src={estrella} alt="estrella" />
@@ -122,11 +102,10 @@ const SuccessStories: React.FC = () => {
                                     <Typography><strong>{slide.hashtag}</strong></Typography>
                                 </CardContent>
                             </Card>
-                        </Grid>
+                        </Carousel.Item>
                     )})
                 }
-              <NavigateNextIcon className={classes.arrowRight} onClick={nextSlide} />
-            </Grid>
+            </Carousel>
     </>
     )
 };

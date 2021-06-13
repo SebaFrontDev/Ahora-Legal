@@ -146,7 +146,6 @@ const Main: React.FC = () => {
                                             className={index === current ? classes.slideActive : classes.slide}
                                         >
                                             {index === current && 
-                                            <Grid>
                                                 <Grid container direction="column">
                                                     <img
                                                         className=""
@@ -155,8 +154,7 @@ const Main: React.FC = () => {
                                                     />
                                                     <Typography variant="subtitle1" align="center"><strong>{slide.title}</strong></Typography>
                                                     <Typography variant="body2" align="center">{slide.subtitle}</Typography>
-                                                </Grid>
-                                            </Grid>   
+                                                </Grid> 
                                             }
                                         </Grid>
                                     )})
