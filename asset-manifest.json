@@ -1,33 +1,37 @@
 {
   "files": {
-    "main.js": "/ahoralegal/static/js/main.9fd6f5bc.chunk.js",
-    "main.js.map": "/ahoralegal/static/js/main.9fd6f5bc.chunk.js.map",
+    "main.css": "/ahoralegal/static/css/main.3aee8a77.chunk.css",
+    "main.js": "/ahoralegal/static/js/main.e3688f2d.chunk.js",
+    "main.js.map": "/ahoralegal/static/js/main.e3688f2d.chunk.js.map",
     "runtime-main.js": "/ahoralegal/static/js/runtime-main.a816b61b.js",
     "runtime-main.js.map": "/ahoralegal/static/js/runtime-main.a816b61b.js.map",
-    "static/js/2.75ba1434.chunk.js": "/ahoralegal/static/js/2.75ba1434.chunk.js",
-    "static/js/2.75ba1434.chunk.js.map": "/ahoralegal/static/js/2.75ba1434.chunk.js.map",
+    "static/js/2.e836cda7.chunk.js": "/ahoralegal/static/js/2.e836cda7.chunk.js",
+    "static/js/2.e836cda7.chunk.js.map": "/ahoralegal/static/js/2.e836cda7.chunk.js.map",
     "index.html": "/ahoralegal/index.html",
-    "static/js/2.75ba1434.chunk.js.LICENSE.txt": "/ahoralegal/static/js/2.75ba1434.chunk.js.LICENSE.txt",
+    "static/css/main.3aee8a77.chunk.css.map": "/ahoralegal/static/css/main.3aee8a77.chunk.css.map",
+    "static/js/2.e836cda7.chunk.js.LICENSE.txt": "/ahoralegal/static/js/2.e836cda7.chunk.js.LICENSE.txt",
+    "static/media/MobileImg.49e3fc07.png": "/ahoralegal/static/media/MobileImg.49e3fc07.png",
     "static/media/ahoraLegalLogo.e371f4f2.svg": "/ahoralegal/static/media/ahoraLegalLogo.e371f4f2.svg",
     "static/media/asuntosCiviles.d2af009a.svg": "/ahoralegal/static/media/asuntosCiviles.d2af009a.svg",
     "static/media/balanza.1a0b7337.svg": "/ahoralegal/static/media/balanza.1a0b7337.svg",
-    "static/media/banner.cf8e62d8.svg": "/ahoralegal/static/media/banner.cf8e62d8.svg",
-    "static/media/bannerLeft.008ea1ee.svg": "/ahoralegal/static/media/bannerLeft.008ea1ee.svg",
+    "static/media/banner.df9a7e0e.png": "/ahoralegal/static/media/banner.df9a7e0e.png",
+    "static/media/bannerLeft.e969b64b.png": "/ahoralegal/static/media/bannerLeft.e969b64b.png",
     "static/media/cellPhoneImg.36e08763.svg": "/ahoralegal/static/media/cellPhoneImg.36e08763.svg",
     "static/media/comerciales.7dc7b276.svg": "/ahoralegal/static/media/comerciales.7dc7b276.svg",
+    "static/media/style.css": "/ahoralegal/static/media/penal.a5f3247f.png",
     "static/media/consumidor.83065253.svg": "/ahoralegal/static/media/consumidor.83065253.svg",
     "static/media/decorationLeft.e1e027ca.svg": "/ahoralegal/static/media/decorationLeft.e1e027ca.svg",
     "static/media/decorationRight.43da3acb.svg": "/ahoralegal/static/media/decorationRight.43da3acb.svg",
     "static/media/estrella.759204a4.svg": "/ahoralegal/static/media/estrella.759204a4.svg",
     "static/media/familiares.0be6b970.svg": "/ahoralegal/static/media/familiares.0be6b970.svg",
     "static/media/heroVideo.340a77e3.mp4": "/ahoralegal/static/media/heroVideo.340a77e3.mp4",
-    "static/media/logo.89444b26.svg": "/ahoralegal/static/media/logo.89444b26.svg",
     "static/media/penales.0f4ea658.svg": "/ahoralegal/static/media/penales.0f4ea658.svg",
     "static/media/planBasic.983e7d66.svg": "/ahoralegal/static/media/planBasic.983e7d66.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a816b61b.js",
-    "static/js/2.75ba1434.chunk.js",
-    "static/js/main.9fd6f5bc.chunk.js"
+    "static/js/2.e836cda7.chunk.js",
+    "static/css/main.3aee8a77.chunk.css",
+    "static/js/main.e3688f2d.chunk.js"
   ]
 }
