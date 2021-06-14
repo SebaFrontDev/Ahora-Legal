@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     bottom: -2.5,
     color: 'white',
     '&:hover': {
+      
       fontSize: 'calc(100% + 20px)',
     }
   },

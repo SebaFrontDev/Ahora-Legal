@@ -1,28 +1,30 @@
 .animation {
-    animation: changeBackgroundImg 10s ease infinite;
+    animation: changeBackgroundImg 15s ease infinite;
+    animation-timing-function: linear;
     height: 800px;
     background-image: url('./frontImg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 @keyframes changeBackgroundImg {
-    25% {
+    20% {
       background-image: url('./familia.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
-    50% {
+    40% {
       background-image: url('./penal.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
-    75% {
+    60% {
       background-image: url('./comercio.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
-    100% {
+    80% {
       background-image: url('./consumidor.png');
       background-repeat: no-repeat;
       background-size: cover;
