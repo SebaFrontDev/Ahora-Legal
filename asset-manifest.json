@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ahoralegal/static/js/main.641d0282.chunk.js",
-    "main.js.map": "/ahoralegal/static/js/main.641d0282.chunk.js.map",
+    "main.js": "/ahoralegal/static/js/main.e095e7b6.chunk.js",
+    "main.js.map": "/ahoralegal/static/js/main.e095e7b6.chunk.js.map",
     "runtime-main.js": "/ahoralegal/static/js/runtime-main.a816b61b.js",
     "runtime-main.js.map": "/ahoralegal/static/js/runtime-main.a816b61b.js.map",
     "static/js/2.1df526f1.chunk.js": "/ahoralegal/static/js/2.1df526f1.chunk.js",
@@ -33,6 +33,6 @@
   "entrypoints": [
     "static/js/runtime-main.a816b61b.js",
     "static/js/2.1df526f1.chunk.js",
-    "static/js/main.641d0282.chunk.js"
+    "static/js/main.e095e7b6.chunk.js"
   ]
 }
