@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/ahoralegal/static/js/main.307d1c1c.chunk.js",
-    "main.js.map": "/ahoralegal/static/js/main.307d1c1c.chunk.js.map",
+    "main.js": "/ahoralegal/static/js/main.659b0723.chunk.js",
+    "main.js.map": "/ahoralegal/static/js/main.659b0723.chunk.js.map",
     "runtime-main.js": "/ahoralegal/static/js/runtime-main.a816b61b.js",
     "runtime-main.js.map": "/ahoralegal/static/js/runtime-main.a816b61b.js.map",
     "static/js/2.1df526f1.chunk.js": "/ahoralegal/static/js/2.1df526f1.chunk.js",
     "static/js/2.1df526f1.chunk.js.map": "/ahoralegal/static/js/2.1df526f1.chunk.js.map",
     "index.html": "/ahoralegal/index.html",
     "static/js/2.1df526f1.chunk.js.LICENSE.txt": "/ahoralegal/static/js/2.1df526f1.chunk.js.LICENSE.txt",
-    "static/media/MobileImg.49e3fc07.png": "/ahoralegal/static/media/MobileImg.49e3fc07.png",
+    "static/media/MobileImg.50b27fa4.png": "/ahoralegal/static/media/MobileImg.50b27fa4.png",
     "static/media/ahoraLegalLogo.e371f4f2.svg": "/ahoralegal/static/media/ahoraLegalLogo.e371f4f2.svg",
     "static/media/asuntosCiviles.d2af009a.svg": "/ahoralegal/static/media/asuntosCiviles.d2af009a.svg",
     "static/media/balanza.1a0b7337.svg": "/ahoralegal/static/media/balanza.1a0b7337.svg",
@@ -33,6 +33,6 @@
   "entrypoints": [
     "static/js/runtime-main.a816b61b.js",
     "static/js/2.1df526f1.chunk.js",
-    "static/js/main.307d1c1c.chunk.js"
+    "static/js/main.659b0723.chunk.js"
   ]
 }
